@@ -1,0 +1,7 @@
+__pycache__/
+state/
+*.pyc
+.env
+.env.*
+login.toml
+*.private.toml

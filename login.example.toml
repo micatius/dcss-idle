@@ -1,0 +1,21 @@
+# Copy to login.toml and edit locally. Never commit the filled-in file.
+# Example console prompts only; verify against your actual server screens.
+username = "YOUR_USERNAME"
+password = "YOUR_PASSWORD"
+timeout = 60
+# Must match a screen shown ONLY after successful authentication.
+# Replace this example if your lobby uses different text.
+success_pattern = "(?i)logged in as"
+
+[[steps]]
+pattern = "(?i)login|log in"
+value = "literal"
+keys = "l"
+
+[[steps]]
+pattern = "(?i)(?:username|user name|login name):\\s*$"
+value = "username"
+
+[[steps]]
+pattern = "(?i)password:\\s*$"
+value = "password"
